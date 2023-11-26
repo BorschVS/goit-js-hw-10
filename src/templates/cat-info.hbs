@@ -1,5 +1,14 @@
-{{#with breed}}
-  <div class='breed-card'>
-    <img src='{{url}}' alt='{{breeds.name}}' />
+<div class='breed-card'>
+  <div class='thumb'>
+    <img src='{{url}}' alt='{{name}}' />
   </div>
-{{/with}}
+  {{#each breeds}}
+    <ul class='breed-info'>
+      <li class='breed-info__item'><p class='name'><b>{{name}}</b></p></li>
+      <li class='breed-info__item'><p class='description'>
+          {{description}}</p></li>
+      <li class='breed-info__item'><p class='temperament'>Temperament:
+          {{temperament}}</p></li>
+    </ul>
+  {{/each}}
+</div>

@@ -3,6 +3,7 @@ import axios from 'axios';
 export const refs = {
   select: document.getElementById('js-breed-select'),
   catBox: document.querySelector('.cat-info'),
+  loader: document.querySelector('.loader'),
 };
 
 const CAT_API_KEY =
@@ -20,20 +21,7 @@ export const fetchBreeds = () => {
 };
 
 export const fetchCatByBreed = breedId => {
-  return axios.get(
-    `https://api.thecatapi.com/v1/images/search?breed_ids=${breedId}`
-  );
+  return axios
+    .get(`https://api.thecatapi.com/v1/images/search?breed_ids=${breedId}`)
+    .then(response => response.data[0]);
 };
-
-// export const currentBreed = () => {
-//   return axios.get(
-//     `https://api.thecatapi.com/v1/images/search?breed_ids=${breed}`
-//   );
-// };
-
-// return articles.forEach(article => {
-//   const optionEl = document.createElement('option');
-//   optionEl.value = article.id;
-//   optionEl.textContent = article.name;
-//   refs.select.appendChild(optionEl);
-// });
