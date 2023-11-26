@@ -1,0 +1,11 @@
+img {
+  display: block;
+  width: 100%;
+}
+
+.breed-select {
+  width: 200px;
+  border: 2px solid rgb(131, 131, 131);
+  border-radius: 5px;
+  padding: 5px;
+}
