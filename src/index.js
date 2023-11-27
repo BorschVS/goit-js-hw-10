@@ -37,6 +37,8 @@ function markupBreedCard() {
   const selectedBreedId = refs.select[refs.select.selectedIndex].value;
   showLoader();
 
+  refs.catBox.innerHTML = '';
+
   fetchCatByBreed(selectedBreedId)
     .then(breed => {
       return breed;

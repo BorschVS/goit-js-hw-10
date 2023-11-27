@@ -12,7 +12,7 @@ body {
   font-size: 18px;
   color: #212121;
   line-height: 1.5;
-  background-color: #dfdfdf;
+  background-color: #b3aeae;
   margin: 0;
 }
 
@@ -21,6 +21,9 @@ img {
   max-width: 100%;
 
   border-radius: 10px;
+
+  background: linear-gradient(145deg, #d5d5d5, #b3b3b3);
+  box-shadow: 5px 5px 39px #797979, -5px -5px 39px #ffffff;
 }
 
 ul {
@@ -58,8 +61,8 @@ p {
   object-fit: cover;
 
   border-radius: 10px;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow: 8px 8px 37px #c3c3c3, -8px -8px 37px #fdfdfd;
+  background: #c7c7c7;
+  box-shadow: 5px 5px 34px #797979, -5px -5px 34px #ffffff;
 }
 
 .breed-select {
@@ -72,8 +75,8 @@ p {
   padding: 10px;
 
   border-radius: 10px;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow: 8px 8px 37px #c3c3c3, -8px -8px 37px #fdfdfd;
+  background: linear-gradient(145deg, #d5d5d5, #b3b3b3);
+  box-shadow: 5px 5px 39px #797979, -5px -5px 39px #ffffff;
 
   border: none;
   outline: 1px solid transparent;
@@ -87,8 +90,8 @@ p {
   padding: 20px;
 
   border-radius: 10px;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow: 8px 8px 37px #c3c3c3, -8px -8px 37px #fdfdfd;
+  background: linear-gradient(145deg, #d5d5d5, #b3b3b3);
+  box-shadow: 5px 5px 39px #797979, -5px -5px 39px #ffffff;
 }
 
 .breed-card {
